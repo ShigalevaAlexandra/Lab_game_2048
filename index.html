@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2048</title>
+        <!--Style-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="lbl_level" class="lbl_level">
+                <h1 class="lbl_level_">Let's play!</h1>
+            </div>
+        </header>
+        <main>
+            <div id="play_area" class="play_area unvisible">
+                <div id="header_play_area" class="header_play_area">
+                    <h1 class="header_play_area_">2048</h1>
+                    <div id="users_score_area" class="users_score_area">
+                        Score:
+                        <span id="users_score" class="users_score">0</span>
+                     </div>
+                </div>
+                <div id="playing_field" class="playing_field"></div>
+                <button id="btn_stop_game" class="btn_stop_game">Stop Game</button>
+            </div>
+            <div id="game_end_area" class="game_end_area">
+                <div id="title_game" class="title_game">
+                    <h1 class="title_game_">- 2048 -</h1>
+                </div>
+                <div id="lbl_game_over" class="lbl_game_over unvisible">
+                    <h1>Game Over...</h1>
+                </div>
+                <p id="users_result" class="users_result"></p>
+                <button id="btn_start_game" class="btn_start_game">Start Game</button>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <!--Script-->
+        <script src="script.js"></script>
+     </body>
+</html>

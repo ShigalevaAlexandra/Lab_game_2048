@@ -1,0 +1,213 @@
+/*--Подключение_шрифтов-------------------------------------------------------------------*/
+@font-face {
+    font-family: "Fredoka One";
+    src: url("font/FredokaOne-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*--Объявление_переменных-----------------------------------------------------------------*/
+:root {
+    --main-font-color: #36227d;
+    --lbl-level-color: #4a53b6;
+    --main-button-red: #b85757;
+    --main-button-green: #81b857;
+    --playing-field-background: #d7d1dc;
+    --playing-field-border: #7d699d;
+    --main-font-family: "Fredoka One";
+}
+
+/*--Стиль_для_всего_документа-------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font-family);
+}
+
+/*--Стиль_для_всех_элементов_body---------------------------------------------------------*/
+body {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*--Стиль_для_шапки_игровой_области-------------------------------------------------------*/
+.lbl_level {
+    text-align: center;
+    padding-top: 4em;
+}
+.lbl_level_ {
+    color: var(--lbl-level-color);
+}
+
+.play_area {
+    padding: 3.5em;
+    margin-top: 10em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+.header_play_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: var(--playing-field-border);
+    font-size: 4em;
+}
+
+.users_score_area {
+    color: var(--playing-field-border);
+    font-size: 2em;
+}
+.users_score {
+    font-weight: 600;
+}
+
+/*--Стиль_для_игрового_поля---------------------------------------------------------------*/
+.playing_field {
+    width: 30em;
+    height: 30em;
+    background-color: var(--playing-field-background);
+    border: 10px solid var(--playing-field-border);
+    margin: o auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5em;
+}
+
+.block {
+    width: 115px;
+    height: 115px;
+    border: 5px solid var(--playing-field-border);
+    padding-top: 25px;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.btn_stop_game {
+    background-color: var(--main-button-red);
+    margin-top: 5em;
+    margin-left: 5.5em;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 10em;
+}
+
+/*--Стиль_для_информации_об_окончании_игры------------------------------------------------*/
+.game_end_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(images/main_bacground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lbl_game_over, .users_result {
+    margin-bottom: 6em;
+}
+
+.title_game {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+.title_game_ {
+    color: var(--main-font-color);
+}
+
+.users_result {
+    color: var(--lbl-level-color);
+    font-size: 2em;
+}
+
+.btn_start_game {
+    background-color: var(--main-button-green);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 2.5em;
+    color: white;
+}
+
+.unvisible {
+    display: none;
+}
+
+/*--Стиль_для_блоков_со_значениями------------------------------------------------*/
+.block_2 {
+    background-color: #FFF9EA;
+    color: var(--playing-field-border);
+}
+
+.block_4 {
+    background-color: #FEF4D2;
+    color: var(--playing-field-border);
+}
+
+.block_8 {
+    background-color:  #FFEEB4;
+    color: var(--playing-field-border);
+}
+
+.block_16 {
+    background-color: #FFE99B;
+    color: var(--playing-field-border);
+}
+
+.block_32 {
+    background-color: #FFF0EA;
+    color: var(--playing-field-border);
+}
+
+.block_64 { 
+    background-color: #FFE5D7;
+    color: var(--playing-field-border);
+}
+
+.block_128 {
+    background-color: #FFC6A7;
+    color: var(--playing-field-border);
+}
+
+.block_256 {
+    background-color: #FFD7C1;
+    color: var(--playing-field-border);
+}
+
+.block_512 {
+    background-color: #D9EBFF;
+    color: var(--playing-field-border);
+}
+
+.block_1024 {
+    background-color: #C9E2FF;
+    color: var(--playing-field-border);
+}
+
+.block_2048 {
+    background-color: #ABD2FF;
+    color: var(--playing-field-border);
+}
